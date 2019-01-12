@@ -26,7 +26,15 @@ let images_urls = [
     
     ];
 
+let artists = [
+    
+    
+    ];
 
+let songLength = [
+    
+    
+    ];
 
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
 
