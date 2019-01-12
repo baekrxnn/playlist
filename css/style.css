@@ -1,11 +1,13 @@
 h1 {
     text-align: center;
+    font-size: 60px;
+    font-family: 'Gamja Flower', cursive;
 }
 
 #cart {
     display: flex;
     justify-content: center;
-    border-top: 5px solid black;
+    border-top: 5px dashed skyblue;
     border-bottom: 5px solid black;
 }
 
@@ -26,12 +28,14 @@ h1 {
     height: 100px;
     font-weight: bold;
     margin: 20px;
+    font-family: 'Gaegu', cursive;
 }
 
 #artists p {
     font-size: 18px;
     height: 100px;
     margin: 20px;
+    font-family: 'Gaegu', cursive;
 }
 
 #lengths p {
