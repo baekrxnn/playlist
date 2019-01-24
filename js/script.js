@@ -27,7 +27,10 @@ let images_urls = [
     ];
 
 let artists = [
-    
+    "Seventeen",
+    "Taeyeon",
+    "iKon",
+    "NCT Dram"
     
     ];
 
@@ -37,8 +40,27 @@ let songLength = [
     ];
 
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-songs.forEach();
 
+
+songs.forEach(function (a){
+    $("#songs").append(a);
+});
+
+links.forEach(function(vid) {
+    $("#links").html("<a href='"+vid+"'></a>");
+});
+
+images_links.forEach(function(imgLink){
+    $("#images").append(imgLink);
+});
+
+artists.forEach(function(idol) {
+    $("#artists").append(idol);
+});
+
+songLength.forEach(function(x){
+    $("#lengths").append(x);
+});
 
 function emptySongInfo(){
     $("#songs").empty();
