@@ -30,7 +30,7 @@ let artists = [
     "Seventeen",
     "Taeyeon",
     "iKon",
-    "NCT Dram"
+    "NCT Dream"
     
     ];
 
@@ -43,11 +43,13 @@ let songLength = [
 
 
 songs.forEach(function (a){
-    $("#songs").append(a);
+    $("#songs").append(a + "<br>");
 });
 
 links.forEach(function(vid) {
-    $("#links").html("<a href='"+vid+"'></a>");
+    $("#links").append(
+        "<iframe src='>" + vid + "'</iframe>"
+        );
 });
 
 images_links.forEach(function(imgLink){
@@ -55,24 +57,46 @@ images_links.forEach(function(imgLink){
 });
 
 artists.forEach(function(idol) {
-    $("#artists").append(idol);
+    $("#artists").append(idol + "<br>");
 });
 
 songLength.forEach(function(x){
     $("#lengths").append(x);
 });
 
+function displaySongInfo(arr) {
+    $(".column").empty();
+    
+    songs.forEach(function(a) {
+        $("#songs").append(a + "<br>");
+    });
+    
+    links.forEach(function(b) {
+        $("#links").append("<iframe src='"+b+"'></iframe> <br>");
+    });
+}
+
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
-
+    $(".column").empty();
 
 }
 
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
-
+    let a = $("#song").val();
+    let b = $("#artist").val();
+    let c = $("#length").val();
+    let d = $("image").val();
+    let e = $("#link").val();
+    
+    songs.push(a);
+    artists.push(b);
+    songLength.push(c);
+    images_links.push(d);
+    links.push(e);
 
 }
 
