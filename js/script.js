@@ -2,10 +2,10 @@
 
 // BELOW Update the songs array with four of your favorites songs.
 let links = [
-    "https://www.youtube.com/watch?v=cr_lx0GSfrA",
-    "https://www.youtube.com/watch?v=XReCgXhOg3E",
-    "https://www.youtube.com/watch?v=OmEPFmyKO74",
-    "https://www.youtube.com/watch?v=4AxjXuReUIs",
+    "https://www.youtube.com/embed/eTuR-e6aLRo",
+    "https://www.youtube.com/embed/XReCgXhOg3E",
+    "https://www.youtube.com/embed/OmEPFmyKO74",
+    "https://www.youtube.com/embed/4AxjXuReUIs",
     ];
 // BELOW Add 4 More arrays to store images_links, atists, song lengths, and links for each song
 // Make sure they match the same order as your array above
@@ -72,7 +72,7 @@ function displaySongInfo(arr) {
     });
     
     links.forEach(function(b) {
-        $("#links").append("<iframe src='"+b+"'></iframe> <br>");
+        $("#links").append("<iframe src='"+ b +"'></iframe> <br>");
     });
 }
 
