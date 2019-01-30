@@ -44,6 +44,7 @@ let songLength = [
 
 songs.forEach(function (a){
     $("#songs").append(a + "<br>");
+    //$("#songs").css("height","100px");
 });
 
 links.forEach(function(vid) {
@@ -74,13 +75,25 @@ function displaySongInfo(arr) {
     links.forEach(function(b) {
         $("#links").append("<iframe src='"+ b +"'></iframe> <br>");
     });
+    
+    images_links.forEach(function(c) {
+        $("#images").append("<img src=' " + c + " '> <br>");
+    });
+    
+    artists.forEach(function(d) {
+        $("#artists").append(d + "<br>");
+    });
+    
+    songLength.forEach(function(e) {
+        $("#lengths").append(e + "<br>");
+    });
 }
+
 
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
     $(".column").empty();
-
 }
 
 

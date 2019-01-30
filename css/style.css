@@ -27,10 +27,15 @@ h1 {
     display:block;
     font-size: 18px;
     /*height: 100px; */
-    font-weight: bold;
     margin: 20px;
-    font-family: 'Gaegu', cursive;
     background-color:white;
+    font-family: 'Gaegu', cursive;
+    font-weight: bold;
+    height: 100px;
+}
+
+#songs ul {
+    height:100px;
 }
 
 #artists {
