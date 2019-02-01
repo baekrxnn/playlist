@@ -17,7 +17,10 @@ let songs =[
     ];
 
 let images_links = [
-    
+    "http://pic.xiami.net/images/album/img57/82/5c458c1fdb63b_4114157_1548061727.jpg",
+    "http://pic.xiami.net/images/album/img54/159/581886e938121_7951354_1478002409.jpg",
+    "http://pic.xiami.net/images/album/img16/174/5a699d455b491_8704716_1516870981.jpg",
+    "http://pic.xiami.net/images/album/img24/138/599533789cd03_6937124_1502950264.jpg",
     
     ];
 
