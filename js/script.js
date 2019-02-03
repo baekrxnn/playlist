@@ -24,11 +24,6 @@ let images_links = [
     
     ];
 
-let images_urls = [
-    
-    
-    ];
-
 let artists = [
     "Seventeen",
     "Taeyeon",
@@ -38,7 +33,10 @@ let artists = [
     ];
 
 let songLength = [
-    
+    "03:04",
+    "03:44",
+    "03:30",
+    "03:47",
     
     ];
 
@@ -46,7 +44,7 @@ let songLength = [
 
 
 songs.forEach(function (a){
-    $("#songs").append(a + "<br>");
+    $("#songs").append("<p>"+ a + "</p><br>");
     //$("#songs").css("height","100px");
 });
 
@@ -61,18 +59,18 @@ images_links.forEach(function(imgLink){
 });
 
 artists.forEach(function(idol) {
-    $("#artists").append(idol + "<br>");
+    $("#artists").append("<p>"+ idol + "</p> <br>");
 });
 
 songLength.forEach(function(x){
-    $("#lengths").append(x);
+    $("#lengths").append("<p>"+ x + "</p> <br>");
 });
 
 function displaySongInfo(arr) {
     $(".column").empty();
     
     songs.forEach(function(a) {
-        $("#songs").append(a + "<br>");
+        $("#songs").append("<p>"+ a + "</p><br>");
     });
     
     links.forEach(function(b) {
@@ -84,11 +82,11 @@ function displaySongInfo(arr) {
     });
     
     artists.forEach(function(d) {
-        $("#artists").append(d + "<br>");
+        $("#artists").append("<p>"+ d + "</p> <br>");
     });
     
     songLength.forEach(function(e) {
-        $("#lengths").append(e + "<br>");
+        $("#lengths").append("<p>"+ e + "</p> <br>");
     });
 }
 
@@ -113,13 +111,13 @@ function addSongInfo(){
     songLength.push(c);
     images_links.push(d);
     links.push(e);
-
 }
 
 $("#add").click(function() {
     emptySongInfo();
     addSongInfo();
     displaySongInfo();
+    $("input").val('');
 });
 
 displaySongInfo();

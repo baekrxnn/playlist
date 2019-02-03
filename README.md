@@ -25,20 +25,20 @@
 ## Day 2
 ### JS
 - [x] Use forEach Loop to display the data from each of your array's in the correct div
-- [ ] Update the code to append and HTML Elements (img, p, a tags) using jQuery. 
+- [x] Update the code to append and HTML Elements (img, p, a tags) using jQuery. 
 ### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 
 ## Day 3
 ### JS
-- [ ] A working click handler
-- [ ] Retrieve user input
-- [ ] Push items to your song array
-- [ ] Display the result to the screen
+- [x] A working click handler
+- [x] Retrieve user input
+- [x] Push items to your song array
+- [x] Display the result to the screen
 
 ### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Extensions
 - [ ] Update the HTML and CSS to reflect your own style.

@@ -12,8 +12,9 @@ h1 {
 }
 
 .column {
-    width: 18%;
+    width: 17%;
     padding: 25px 0px;
+    justify-content:space-around;
 }
 
 #images img {
@@ -25,32 +26,46 @@ h1 {
 
 #songs {
     display:block;
-    font-size: 18px;
+    font-size: 24px;
     /*height: 100px; */
     margin: 20px;
-    background-color:white;
+    /*background-color:white;*/
     font-family: 'Gaegu', cursive;
     font-weight: bold;
     height: 100px;
 }
 
-#songs ul {
-    height:100px;
+#songs p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #artists {
-    font-size: 18px;
+    font-size: 24px;
     height: 100px;
     margin: 20px;
     font-family: 'Gaegu', cursive;
-    background-color: crimson;
+    /*background-color: crimson;*/
+}
+
+#artists p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #lengths {
-    font-size: 16px;
+    font-size: 24px;
     height: 100px;
     margin: 20px;
-    text-align: right;
+    font-family: 'Gaegu', cursive;
+}
+
+#lengths p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 #links iframe {
@@ -86,3 +101,6 @@ body {
     height:100vw;
     width:100vw;
 }
+
+
+
