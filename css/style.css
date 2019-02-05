@@ -2,13 +2,14 @@ h1 {
     text-align: center;
     font-size: 60px;
     font-family: 'Gamja Flower', cursive;
+    color:midnightblue;
 }
 
 #cart {
     display: flex;
     justify-content: center;
-    border-top: 5px dashed skyblue;
-    border-bottom: 5px dashed black;
+    border-top: 5px dashed mediumseagreen;
+    border-bottom: 5px dashed palevioletred;
 }
 
 .column {
@@ -96,10 +97,11 @@ button {
 }
 
 body {
+    margin:0px;
     background-image: linear-gradient(#F7CAC9, #91A8D0);
     background-repeat: no-repeat;
-    height:100vw;
-    width:100vw;
+    height:100%;
+    width:100%;
 }
 
 
