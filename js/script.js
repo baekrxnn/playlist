@@ -78,7 +78,7 @@ links.forEach(function(vid) {
 });
 
 images_links.forEach(function(imgLink){
-    $("#images").append(imgLink);
+    $("#images").append("<img src=' " + imgLink + " '> <br>");
 });
 
 artists.forEach(function(idol) {
@@ -89,7 +89,9 @@ songLength.forEach(function(x){
     $("#lengths").append("<p>"+ x + "</p> <br>");
 });
 
-function displaySongInfo(arr) {
+
+
+function displaySongInfo() {
     $(".column").empty();
     
     songs.forEach(function(a) {
@@ -101,7 +103,7 @@ function displaySongInfo(arr) {
     });
     
     images_links.forEach(function(c) {
-        $("#images").append("<img src=' " + c + " '> <br>");
+        $("#images").append("<img src=' " + c + " '> <br>" );
     });
     
     artists.forEach(function(d) {
@@ -126,7 +128,7 @@ function addSongInfo(){
     let a = $("#song").val();
     let b = $("#artist").val();
     let c = $("#length").val();
-    let d = $("image").val();
+    let d = $("#image").val();
     let e = $("#link").val();
     
     songs.push(a);
